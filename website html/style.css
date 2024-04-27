@@ -1,0 +1,1054 @@
+
+:root{
+    --pink:#e84393;
+    --golden: #ec9c1dc3;
+   
+}
+
+*{
+    margin:0 ;padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+
+}
+
+.heading{
+    color:#1B4D3E ;
+    padding: 15px ;
+    font-weight: 300;
+    font-size: 4.5rem;
+    margin-top: 100px;
+  
+    
+}
+
+.pop{
+  color:#1B4D3E ;
+  /* padding: 1px ; */
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 100px;
+}
+.headingpro{
+    color:#1B4D3E ;
+    padding: 5px ;
+    font-weight: 300;
+    font-size: 5rem;
+    margin-bottom: 100px;
+}
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 3.5rem;
+    border: .1rem solid white;
+    background: #1B4D3E;
+    color: white;
+    padding: 2rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+
+    background:var(--white);
+ 
+}
+.btn-btn{
+    display: inline-block;
+    margin-top: 2rem;
+    border: .1rem solid #1B4D3E;
+    background: white;
+    color: #1B4D3E;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .btn-ss{
+    display: inline-block;
+    margin-top: 2rem;
+    border: .1rem solid #1B4D3E;
+    background: white;
+    color: #1B4D3E;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+
+  .btn-ss:hover {
+   background:var(--white);/* Adjust the hover background color */
+}
+
+  
+header{
+    position: fixed;
+    top: 0;left: 0;right:0;
+    background:#1B4D3E ;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+ 
+}
+ header .logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+ }
+
+
+ header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: white;
+
+ }
+ header .navbar a:hover{
+   color: var(--white);
+
+ }
+ header .icons a{
+ 
+   font-size: 1.5rem;
+   margin-left: 1.5rem;
+    color: white;
+
+ }
+ header .icons a:hover{
+    color: var(--white);
+ }
+
+ header #toggler{
+    display: none;
+ }
+ header .fa-bars{
+    font-size: 3rem;
+    color: white;
+    border-radius: .5rem;
+    padding: .5rem  1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid white;
+    display: none;
+ }
+
+
+ .home {
+    position: relative; /* Add relative positioning to the container */
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1B4D3E; /* Set the background color to green */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home::before {
+  content: "";
+  background-image: url(pexels-photo-6052724.jpeg); /* Replace 'your-other-image-url.jpg' with the URL of your other image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 290px;
+  right: 500px;
+  left: 55%;
+  width: 21%; /* Set width to cover the entire container */
+  height: 50%; /* Set height to make it longer */
+  z-index: 2; /* Ensure the image stays above content */
+}
+
+
+
+.home::after {
+    content: "";
+    background-image: url(pexels-photo-6052724.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 3%;
+    top: 150px;
+    right: 0;
+    left: 65%;
+    width: 28%; /* Set width to 50% of the container */
+    height: 88%; /* Set height to 100% of the container */
+    z-index: 1; /* Ensure the image stays above content */
+}
+
+
+.home .content{
+    max-width: 50rem;
+}
+.home .content h1{
+    font-size: 1.5rem;
+    color: white;
+}
+.home .content h3{
+    font-size: 4.5rem;
+    color: white;
+}
+.home .content span{
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem 0 ;
+    line-height: 1.5;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .vedio-container {
+    width: 50%; /* Adjust as needed */
+    position: relative;
+  }
+  
+  .vedio-container img {
+    width: 100%;
+  }
+  
+  .content {
+    width: 50%; /* Adjust as needed */
+    position: relative;
+    padding-left: 20px; /* Add some padding between the image and content */
+    font-size: 2rem;
+    margin-left: 50px; /* Adjust margin as needed */
+  }
+
+  .content .con {
+    margin-top: 25px; 
+    font-weight: 300;
+
+  }
+  
+  .content span {
+   
+    font-size: 15px; /* Adjust the font size as needed */
+    color: gray;
+    font-weight: 300;
+  }
+  
+  .additional-image {
+    text-align: center;
+    margin-top: 95px; /* Adjust margin as needed */
+  
+
+  }
+  
+  .additional-image img {
+    width: 100%; /* Ensure image does not exceed container width */
+
+   
+  }
+  
+
+  .box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  
+  .box {
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust margin between boxes */
+    text-align: left;
+  }
+  
+  .image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 110%;
+    height: 70%;
+    transition: transform 0.6s ease;
+  }
+
+  .image:hover img {
+    transform: scale(1.2);
+}
+  .connect {
+    margin-top: 12px; /* Adjust margin as needed */
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .icons {
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contentoo {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px; 
+  
+    
+  }
+ 
+  .background {
+    position: relative;
+    width: 99%;
+    height: 10%;
+
+}
+
+.background img {
+    width: 100%;
+    display: block;
+    height: 10%;
+}
+
+.transbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    background-color:white;/* Adjust the background color and opacity */
+    padding: 50px;
+    border: 1px solid white; /* Adjust the border properties */
+    text-align: center;
+}
+
+.transbox h1 {
+    font-size: 50px; /* Adjust the font size */
+    margin-bottom: 10px; /* Adjust spacing */
+    font-weight: 400;
+    color:#1B4D3E ;
+}
+
+.transbox p {
+    font-size: 20px; /* Adjust the font size */
+    margin-top: 30px;
+    margin-bottom: 10px; /* Adjust spacing */
+    font-weight: 500;
+    color:#1B4D3E ;
+}
+
+
+
+
+.about {
+  position: relative; /* Add relative positioning to the container */
+  display: flex;
+  align-items: center;
+  min-height: 75vh;
+  background-color: #1B4D3E; /* Set the background color to green */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 130px;
+}
+
+.about .contentabout{
+  max-width: 60rem;
+  margin-right: 120px;
+  margin-top: 150px;
+}
+.about .contentabout h1{
+  font-size: 6.5rem;
+  color: white;
+  
+}
+.about .contentabout h3{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.about::after {
+  content: "";
+  background-image: url('about-03.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 97px; /* Adjust the top position */
+  right: 100px; /* Adjust the right position */
+  width: 500px; /* Adjust the width of the image */
+  height: 510px; 
+}
+
+.contentgoals .pok {
+
+  color:#1B4D3E ;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 60px;
+}
+
+.contentgoals {
+  display: flex;
+  justify-content: space-between; 
+  max-width: 800rem;
+}
+
+.left-content {
+  flex: 1; /* Take up remaining space */
+  margin-right: 20px;
+  margin-left: 50px;
+  color:#1B4D3E ;
+  padding: 5px ;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+
+.right-content {
+  flex: 1; /* Take up remaining space */
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-top: 70px;
+  color: gray;
+  padding: 4px ;
+  font-weight:lighter;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+.newab .rowk {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-top: 50px;
+}
+
+.vediontainer {
+  flex: 1; /* Take up remaining space */
+  margin-right: 20px; /* Add some spacing between the image and text */
+  margin-top: 1px; /* Add some spacing between the image and text */
+  width: 50%; /* Adjust as needed */
+  position: relative;
+  margin-left: 1px;
+}
+
+
+/* .vediontainer img {
+  width: 100%;
+} */
+
+
+
+.contenteen {
+  flex: 2; /* Take up twice as much space as the image */
+  margin-top: 0.5px;
+}
+
+.hho {
+  text-align: left; /* Align text to the left */
+  color:#1B4D3E ;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 1px;
+  margin-left: 70px; 
+}
+.lol {
+  text-align: left;
+  color:#1B4D3E ;
+  padding: 15px ;
+  font-weight: 300;
+  font-size: 4.5rem;
+  margin-top: 10px;
+  margin-left: 50px; 
+}
+.conda{
+  text-align: left;
+  width: 90%;
+  /* position: relative; */
+  font-weight: 400;
+  color: gray;
+  line-height: 1.7;
+  padding-left: 20px; 
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-left: 50px; 
+}
+
+
+
+
+.poppp {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px; 
+  margin-top: 47px; 
+  color: #1B4D3E;
+}
+
+.line {
+  border-top: 0.5px solid rgb(218, 209, 209); 
+  margin-bottom: 80px; 
+}
+.shopcon {
+  margin-top: 12px; /* Adjust margin as needed */
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #1B4D3E; 
+}
+.contentsh {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #1B4D3E; 
+}
+
+
+
+
+
+
+.contact {
+  position: relative; /* Add relative positioning to the container */
+  display: flex;
+  align-items: center;
+  min-height: 75vh;
+  background-color: #1B4D3E; /* Set the background color to green */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 130px;
+  margin-top: 30px;
+}
+
+.contact .conttt{
+  max-width: 58rem;
+  margin-right: 120px;
+  margin-top: 150px;
+}
+.contact .conttt h1{
+  font-size: 6.5rem;
+  color: white;
+  
+}
+.contact .conttt h3{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.contact::after {
+  content: "";
+  background-image: url('contact-0001.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 97px; /* Adjust the top position */
+  right: 100px; /* Adjust the right position */
+  width: 500px; /* Adjust the width of the image */
+  height: 510px; 
+}
+
+
+ .review .popreview{
+  color:#1B4D3E ;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 2px;
+
+}
+
+
+.review .hsfreview{
+  color:#1B4D3E ;
+  font-weight: 300;
+  font-size: 5rem;
+  margin-bottom: 95px;
+} 
+
+
+ .review .box-conta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.review .box-conta .boxx{
+  flex: 1 1 30rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+  padding: 1rem 1rem;
+  position: relative;
+
+}
+
+
+/* .review .box-conta .boxx .fa-quote-right{
+  position: absolute;
+  bottom: 3rem; right :3rem;
+  font-size: 6rem;
+  color: #eee;
+
+} */
+/* .review .box-conta .boxx .stars i{
+color: var(--golden);
+font-size: 1.5rem;
+
+} */
+
+
+/* Styles for the stars */
+.stars {
+  color: orange;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  font-size: 1.5rem;
+}
+
+.stars i {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  font-size: 1.5rem;
+}
+
+.review .box-conta .boxx p{
+color:gray;
+font-size: 1.5rem;
+line-height: 2rem;
+font-weight: 300;
+padding-top: 2rem;
+
+}
+
+
+.review .box-conta .boxx .user{
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  
+
+}
+.review .box-conta .boxx .user-info h1{
+  display: flex;
+  align-items: center;
+
+  
+
+}
+
+.review .box-conta .boxx .user-info span{
+  display: flex;
+  align-items: center;
+ margin-top: 2px;
+ margin-bottom: 30px;
+  
+
+}
+.review .box-conta .boxx img{
+ height: 6rem;
+ width: 6rem;
+ border-radius: 50%;
+ object-fit: cover;
+ margin-right: 3rem;
+
+}
+.review .box-conta .boxx h1{
+color: #1B4D3E;
+font-size: 1.6rem;
+font-weight: 300;
+margin-top: 10px;
+
+
+}
+
+.review .box-conta .boxx span{
+color: gray;
+font-size: 1.3rem;
+font-weight: 400;
+
+
+
+}
+ 
+
+.rowu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 70px;
+  margin-right: 40px;
+  margin-top: 100px;
+}
+
+.contact-info {
+  width: 35%;
+}
+
+.contact-info h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 47px; 
+  color: #1B4D3E;
+}
+
+.contact-info h3{
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: 47px; 
+  color: #1B4D3E;
+}
+
+.contact-info p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color:gray;
+}
+
+.SOCIAL {
+  color:#1B4D3E;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  font-size: 2rem;
+}
+
+.SOCIAL i {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  font-size: 1.5rem;
+
+}
+.lin {
+  border-top: 0.5px solid rgb(218, 209, 209); ;
+}
+
+
+.contact-form {
+  width: 45%;
+  margin-top: 50px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(104, 85, 85);
+
+}
+.contact-form {
+  width: 52%;
+  height:50%;
+  background-color: rgb(245, 244, 244); /* Light blue background color */
+  border: 1px solid white; /* Box border */
+  padding: 40px;
+}
+
+.bopx {
+  width: calc(50% - 5px); /* Adjust width to fit two input fields */
+  padding: 15px;
+  border: 1px solid #ccc; /* Add border to input fields */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  margin-bottom: 10px; /* Add some spacing between input fields */
+}
+
+.bopx:first-child {
+  margin-right: 10px; /* Add some space between input fields */
+}
+
+.btm {
+  display: inline-block;
+  margin-top: 0.2rem;
+  border: .1rem solid #1B4D3E;
+  background: white;
+  color: #1B4D3E;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btm:hover {
+  background-color:#1B4D3E; /* Darker green on hover */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.name-inputs {
+  display: flex;
+  padding: 10px;
+}
+.email {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc; /* Add border to input field */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  margin-bottom: 10px; /* Add some spacing between input fields */
+}
+
+.mess {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ccc; /* Add border to textarea */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  margin-bottom: 10px; /* Add some spacing between input fields */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+
+
+
+
+
+
+.footer-container {
+  background-color: white;
+  border-bottom: 0.5px solid rgb(218, 209, 209);;
+  padding: 60px;
+  display: flex;
+ margin-top: 90px;
+  align-items: center;
+  color: #1B4D3E;
+}
+
+.looop{
+  font-weight: 400px;
+  font-size: 1.8rem;
+   color: #1B4D3E;  
+   margin-left: 40px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  margin-left: 380px;
+}
+
+.link-list {
+  display: flex;
+  list-style-type: none;
+ font-weight: 400;
+ font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  color: #1B4D3E;
+}
+
+.link-list a {
+  margin-right: 20px;
+  color: #1B4D3E;
+  text-decoration: none;
+}
+
+.SOCI {
+  color:#1B4D3E;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  font-size: 2rem;
+  margin-left: 400px;
+}
+
+.SOCI i {
+  margin: 0; 
+  padding: 0; 
+  font-size: 1.7rem;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: gray;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 40px;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+.ho {
+  position: relative; /* Add relative positioning to the container */
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  background-color: #1B4D3E; /* Set the background color to green */
+  background-size: cover;
+  background-position: center;
+  margin-top: 90px;
+}
+
+
+
+
+
+
+
+.ho::after {
+    content: "";
+    background-image: url(footer-cta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 3%;
+    top: 4px;
+    right: 52%;
+    width: 60%; /* Set width to 50% of the container */
+    height: 99%; /* Set height to 100% of the container */
+    z-index: 1; /* Ensure the image stays above content */
+}
+
+
+
+.ho .hoco{
+  max-width: 500rem;
+}
+.ho .hoco h1{
+  font-size: 4rem;
+  color: white;
+ margin-left: 630px;
+ margin-top: 30px;
+}
+
+
+
+.bt{
+  display: inline-block;
+  margin-top: 3.5rem;
+  border: .1rem solid white;
+  background: #1B4D3E;
+  color: white;
+  padding: 2rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin-left: 630px;
+  margin-top: 20px;
+}
+.bt:hover{
+
+  background:var(--white);
+
+}
+
+
+
+
+
+
+
+
+
+
+ @media( max-width: 991px){
+    html{
+        font-size: 55%;
+        
+    }
+    header{
+        padding: 2rem;
+        
+    }
+    section{
+        padding: 2rem;
+        
+    }
+    .home{
+      background-position: left;
+        
+    }
+ }
+
+ @media( max-width: 760px){
+    html .fa-bars{
+        display: block;
+        
+    }
+    header .navbar{
+      position: absolute;
+      top:100%; left:0; right:0;
+      background: #1B4D3E;
+      border-top: .1rem solid white;
+        clip-path: polygon(0 0 ,100% 0, 100% 0, 0 0 );
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0 ,100% 0, 100% 100%, 0% 100% );
+    }
+ 
+    header .navbar a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+      background: #1B4D3E;
+      border: .1rem solid white;
+      display: block;
+        
+    }
+    header .content h1{
+   font-size: 1.5rem;
+        
+    }
+    header .content h3{
+   font-size: 5rem;
+        
+    }
+    header .content span{
+   font-size: 2.5rem;
+        
+    }
+ }
+    
+ @media( max-width: 450px){
+    html{
+        font-size: 50%;
+        
+    }
+   
+ }
